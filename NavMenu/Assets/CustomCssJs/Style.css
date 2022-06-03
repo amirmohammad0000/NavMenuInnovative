@@ -1,0 +1,86 @@
+/************************************************************************/ /* Start Style All */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI;
+  user-select: none;
+}
+/************************************************************************/ /* End Style All */
+
+/************************************************************************/ /* Start Style Nav Menu */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_nav_menu_main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_nav_menu {
+  position: relative;
+  width: 141px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #910ec9;
+  color: #eee;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  cursor: pointer;
+  animation: BackgroundColorNavMenu 4s infinite;
+  z-index: 1;
+}
+
+.section_nav_menu:hover {
+  background-color: #ce4bda;
+}
+
+.section_nav_menu i {
+  transform: rotate(-45deg);
+}
+
+.section_inner_nav_menu {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #910ec9;
+  color: #eee;
+  transform: rotate(-45deg);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.section_inner_nav_menu i {
+  transform: rotate(45deg);
+}
+
+.section_inner_nav_menu:hover {
+  background-color: #ce4bda;
+}
+
+@keyframes BackgroundColorNavMenu {
+  0% {
+    background-color: #910ec9;
+  }
+
+  100% {
+    background-color: #ce4bda;
+  }
+}
+/************************************************************************/ /* End Style Nav Menu */
